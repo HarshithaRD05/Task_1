@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>
+         Facebook 
+      </title>
+      
+      <script type="text/javascript">
+        function check1(){
+         var x = document.getElementById('u').value;
+         var y = document.getElementById('p').value;
+
+         if(x =="admin" && y=="admin")
+            {  alert("Successfully LoggedIn");
+               return true;}
+         else
+            {  alert("No Such Account was Found");
+               return false;}
+         }
+
+         function changecss(x)
+         {
+            x.style.border = "1px solid red";
+         }
+
+      </script>
+
+      <link rel="icon" href="fb.png" type="image" sizes="25*25">
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+   </head>
+   <style type="text/css">
+      .l1{ 
+      font-family: 'roboto', cursive; font-size: 45px; color: white;
+      margin-right: 0px;
+      }
+      header{
+      background-color: #3b5998;
+      padding-left: 200px;
+      padding-right: 50px;
+      padding-top: 25px;
+      display: flex;
+      flex-direction: row;
+      height: 75px;
+      }
+
+      input[type=text]:focus {
+    border: 3px solid #555000;
+}
+
+         select:focus{
+        outline: none;
+    }
+
+      .l2
+      {
+      color: white;
+      font-size: 15px;
+
+
+      }
+      .su
+      {
+      padding-right: 50px;
+      padding-left: 100px;
+      }
+      #rcorners1 {
+      border-radius: 7px;
+      background: #598e46;
+      width: 220px;
+      height: 40px;
+      text-align: center;
+      color: white;
+      font-size: 18px;   
+      border: .25px solid #000000; 
+      }
+      #rcorners2 {
+      border: .5px solid #000000; 
+      border-radius: 2px;
+      background: #435f9c;
+      height: 22px;
+      text-align: center;
+      color: white;
+      font-size: 12px;    
+      }
+      #fn {
+      border: .5px solid lightgrey; 
+      border-radius: 5px;
+      margin: 7px;
+      height: 35px;
+      width: 180px;
+      padding-left: 10px;
+      text-align: left;
+      color: white;
+      font-size: 15px;    
+      }
+      #sn {
+      border: .5px solid lightgrey;
+      border-radius: 5px;
+      margin: 7px;
+      height: 35px;
+      width: 180px;
+      padding-left: 10px;
+      text-align: left;
+      color: white;
+      font-size: 15px;    
+      }
+      #m {
+      border: .5px solid lightgrey;
+      border-radius: 5px;
+      margin: 7px;
+      height: 35px;
+      width: 395px;
+      padding-left: 10px;
+      text-align: left;
+      color: white;
+      font-size: 15px;    
+      }
+      body
+      {
+      background: #4b6cb7;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to top, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to top, #d7dcea, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center; 
+      font-family: 'Roboto', sans-serif;
+      margin: 0px;
+      }
+      .row {
+      display: flex;
+      flex-direction: row; 
+      }
+      .col
+      {
+      	width: 45px;
+      	display: flex;
+      }
+      #u
+      {
+      background-color: #faffbd;
+      border: 1px solid black;
+      height: 20px;
+      outline: none;
+      padding-left: 5px;
+      }
+      #p
+      {
+      background-color: #faffbd;
+      border: 1px solid black;
+      height: 20px;
+      outline: none;
+      padding-left:5px
+      }
+
+      a:link {
+    text-decoration: none;
+}a:hover {
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+      h2
+      {
+      	color: solid lightgrey;
+      	text-decoration-color: solid lightgrey;
+      }
+      .picture
+      {
+      	padding-left: 150px;
+      	float: flex;
+      	margin-top: 20px;
+      	flex-direction: bottom;
+      
+      	font-size: 21px;
+      	color: #0e385f;
+      	width : 35%;
+      }
+   </style>
+   <body>
+      <header>
+         
+         <div class="row">
+         <label class="l1" ><b>facebook</b></label>
+         
+            <form style="padding-left: 400px; padding-right:15px" onsubmit="return check1()">
+            <label class="l2">Email or Phone            </label>
+            <label class="l2" style="padding-left: 75px">                Password </label>
+            <div><input type="text" name="Username" id="u" placeholder="Enter your name" required="" >
+               <input type="password" name="Password" id="p" placeholder="Enter your password" required="">
+               <input type="submit" id="rcorners2" value="Log In">
+            </div>
+            <div ><a class="l2" href="forgot.html" style="padding-left: 180px; color: #9cabcc;">Forgotten account?</a></div>
+         </form>
+        </div>
+      </header>
+      <div class="row" align="left">
+      	<div class="picture">
+      		<label>Facebook helps you connect and share with the people in your life.</label>
+      		<img class="img" src="https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/GwFs3_KxNjS.png" alt="" width="537" height="195">
+      	</div>
+         <div class="su">
+            <form action="signup" >
+               <h1 style="font-size: 40px">Create an Account</h1>
+               <h2 style="font-size: 20px">It's free and always will be</h2>
+               <input type="text" name="Username" id="fn" placeholder="First name"   onfocus="changecss(this)">
+               <input type="text" name="Username" id="sn" placeholder="Surname" onfocus="changecss(this)">
+               <div>
+                  <input type="text" name="Username" id="m" placeholder="Mobile number or email address" onfocus="changecss(this)">
+               </div>
+               <input type="password" name="Password" id="m" placeholder="New password" onfocus="changecss(this)" ><br>
+               <h2>Birthday</h2>
+               <div>
+                  <select name="date";>
+                     <option value="day">Day</option>
+                     <option value="day">01</option>
+                     <option value="day">02</option>
+                     <option value="day">03</option>
+                     <option value="day">04</option>
+                     <option value="day">05</option>
+                     <option value="day">06</option>
+                     <option value="day">07</option>
+                     <option value="day">08</option>
+                     <option value="day">09</option>
+                     <option value="day">10</option>
+                     <option value="day">12</option>
+                     <option value="day">13</option>
+                     <option value="day">14</option>
+                     <option value="day">15</option>
+                     <option value="day">16</option>
+                     <option value="day">17</option>
+                     <option value="day">18</option>
+                     <option value="day">19</option>
+                     <option value="day">20</option>
+                     <option value="day">21</option>
+                     <option value="day">22</option>
+                     <option value="day">23</option>
+                     <option value="day">24</option>
+                     <option value="day">25</option>
+                     <option value="day">26</option>
+                     <option value="day">27</option>
+                     <option value="day">28</option>
+                     <option value="day">29</option>
+                     <option value="day">30</option>
+                     <option value="day">31</option>
+                  </select>
+                  <select name="month">
+                     <option value="month">January</option>
+                     <option value="day">February</option>
+                     <option value="day">March</option>
+                     <option value="month">April</option>
+                     <option value="day">May</option>
+                     <option value="day">Jue</option>
+                     <option value="month">July</option>
+                     <option value="day">August</option>
+                     <option value="day">September</option>
+                     <option value="month">October</option>
+                     <option value="day">November</option>
+                     <option value="day">December</option>
+                  </select>
+                  <select name="year">
+                     <option value="month">1990</option>
+                     <option value="day">1991</option>
+                     <option value="day">1992</option>
+                     <option value="month">1993</option>
+                     <option value="day">1994</option>
+                     <option value="day">1995</option>
+                     <option value="month">1996</option>
+                     <option value="day">1997</option>
+                     <option value="day">1998</option>
+                     <option value="month">1999</option>
+                     <option value="day">2000</option>
+                     <option value="day">2001</option>
+                  </select>
+               </div>
+               <div>
+                  <input type="radio" name="gender" value="female">Female
+                  <input type="radio" name="gender" value="male">Male
+               </div><br />
+             <font size="2px"> By clicking Sign Up, you agree to our<a href="celeb.html">Terms, Data Policy and<br /> Cookies Policy</a> . You may receive SMS Notifications 
+                              from us <br />and can opt out any time.</font>
+               <div><input type="submit" id="rcorners1" value="Sign Up"></div>
+               <a href="celeb.html">Create a Page</a><label> for a celebrity,band or business</label>
+            </form>
+         </div>
+      
+   </body>
+</html>
